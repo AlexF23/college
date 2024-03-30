@@ -41,4 +41,20 @@ public class Lecturer {
     public Map<String, Integer> getModulesTeaching() { //return what they can teach
         return modulesTeaching;
     }
+    
+    public class Module {
+    private String LecturerName;
+    private int studentCount;
+
+    // Constructor
+    public Module(String name, int studentCount) {
+        this.LecturerName = name;
+        this.studentCount = studentCount;
+    }
+
+    // Getters
+    public String getName() { return LecturerName; }
+    public int getStudentCount() { return studentCount; 
+    
+    }}
 }
