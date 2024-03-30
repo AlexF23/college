@@ -27,5 +27,7 @@ public class College {
                                ", Lecturer: " + course.getLecturerName() + //get the naame of the lecturer
                                ", Room: " + course.getRoom()); // get the room of the course
     }
+        ReportGenerator reportGenerator = new StudentReport();
+        reportGenerator.generateReport();
     }
 }

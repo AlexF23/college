@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package college;
+
 import java.util.List;
 import java.util.Map;
 
@@ -11,8 +12,8 @@ import java.util.Map;
  * @author Alexander
  */
 public class Student {
-    
-  private final String studentName; //student name
+
+    private final String studentName; //student name
     private final String studentNumber; //student number
     private final String program; //programm they are enrolled in 
     private final List<String> modulesEnrolled; //module they have
@@ -30,7 +31,7 @@ public class Student {
     }
     //getters
 
-      // Returns the name of the student.
+    // Returns the name of the student.
     public String getName() {
         return studentName;
     }
@@ -60,4 +61,3 @@ public class Student {
         return modulesToRepeat;
     }
 }
-
