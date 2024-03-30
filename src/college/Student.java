@@ -12,22 +12,52 @@ import java.util.Map;
  */
 public class Student {
     
-  private String name;
-    private String studentNumber;
-    private String program;
-    private List<String> modulesEnrolled;
-    private Map<String, String> modulesCompleted; // Module name to grade mapping
-    private List<String> modulesToRepeat;
+  private String name; //student name
+    private String studentNumber; //student number
+    private String program; //programm they are enrolled in 
+    private List<String> modulesEnrolled; //module they have
+    private Map<String, String> modulesCompleted; // Module completed by student
+    private List<String> modulesToRepeat; //modules student needs to repeat
 
     // Constructor
     public Student(String name, String studentNumber, String program, List<String> modulesEnrolled, Map<String, String> modulesCompleted, List<String> modulesToRepeat) {
-        this.name = name;
+        this.name = name; //s
         this.studentNumber = studentNumber;
         this.program = program;
         this.modulesEnrolled = modulesEnrolled;
         this.modulesCompleted = modulesCompleted;
         this.modulesToRepeat = modulesToRepeat;
     }
+    //getters
 
+      // Returns the name of the student.
+    public String getName() {
+        return name;
+    }
+
+    // Returns the student number.
+    public String getStudentNumber() {
+        return studentNumber;
+    }
+
+    // Returns the program in which the student is enrolled.
+    public String getProgram() {
+        return program;
+    }
+
+    // Returns the list of modules the student is currently enrolled in.
+    public List<String> getModulesEnrolled() {
+        return modulesEnrolled;
+    }
+
+    // Returns the map of completed modules and their corresponding grades.
+    public Map<String, String> getModulesCompleted() {
+        return modulesCompleted;
+    }
+
+    // Returns the list of modules the student needs to repeat.
+    public List<String> getModulesToRepeat() {
+        return modulesToRepeat;
+    }
 }
 
