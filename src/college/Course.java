@@ -9,5 +9,11 @@ package college;
  * @author Alexander
  */
 public class Course {
+    private int id;
+    private String name;
+    private String program;
+    private int studentsEnrolled;
+    private String lecturerName;
+    private String room;
     
 }
