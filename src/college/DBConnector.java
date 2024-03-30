@@ -5,6 +5,8 @@
 package college;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 /**
  *
@@ -14,4 +16,8 @@ public class DBConnector {
      private static final String URL = "jdbc:mysql://localhost:3306/college";
      private static final String USER = "root"; // Update with your username
      private static final String PASS = "password"; // Update with your password
+     
+      public static Connection connect() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASS);
+    }
 }
