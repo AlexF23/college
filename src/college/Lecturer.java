@@ -26,19 +26,19 @@ public class Lecturer {
     }
 
     // Getters
-    public String getName() {
+    public String getName() { //returns lecturer name
         return name;
     }
 
-    public String getRole() {
+    public String getRole() { //returns lecturer role
         return role;
     }
 
-    public List<String> getCanTeachTypes() {
+    public List<String> getCanTeachTypes() { // return whatlecturer can teach
         return canTeachTypes;
     }
 
-    public Map<String, Integer> getModulesTeaching() {
+    public Map<String, Integer> getModulesTeaching() { //return what they can teach
         return modulesTeaching;
     }
 }
