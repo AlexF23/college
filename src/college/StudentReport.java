@@ -42,7 +42,6 @@ public class StudentReport {
                 displayStudentReport(student);
             }
         } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 
