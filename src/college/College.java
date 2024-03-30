@@ -14,7 +14,14 @@ public class College {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        CourseReportGenerator reportGenerator = new CourseReportGenerator();
+        List<Course> courses = reportGenerator.generateReport();
+        for (Course course : courses) {
+            System.out.println("Course Name: " + course.getName() +
+                               ", Program: " + course.getProgram() +
+                               ", Enrolled: " + course.getStudentsEnrolled() +
+                               ", Lecturer: " + course.getLecturerName() +
+                               ", Room: " + course.getRoom());
     }
-    
+    }
 }

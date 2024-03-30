@@ -8,6 +8,6 @@ package college;
  *
  * @author Alexander
  */
-public class MainApplication {
+public class LecturerReport {
     
 }
