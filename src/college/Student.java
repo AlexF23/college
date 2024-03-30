@@ -12,16 +12,16 @@ import java.util.Map;
  */
 public class Student {
     
-  private String name; //student name
-    private String studentNumber; //student number
-    private String program; //programm they are enrolled in 
-    private List<String> modulesEnrolled; //module they have
-    private Map<String, String> modulesCompleted; // Module completed by student
-    private List<String> modulesToRepeat; //modules student needs to repeat
+  private final String studentName; //student name
+    private final String studentNumber; //student number
+    private final String program; //programm they are enrolled in 
+    private final List<String> modulesEnrolled; //module they have
+    private final Map<String, String> modulesCompleted; // Module completed by student
+    private final List<String> modulesToRepeat; //modules student needs to repeat
 
     // Constructor
     public Student(String name, String studentNumber, String program, List<String> modulesEnrolled, Map<String, String> modulesCompleted, List<String> modulesToRepeat) {
-        this.name = name; //s
+        this.studentName = name; //s
         this.studentNumber = studentNumber;
         this.program = program;
         this.modulesEnrolled = modulesEnrolled;
@@ -32,7 +32,7 @@ public class Student {
 
       // Returns the name of the student.
     public String getName() {
-        return name;
+        return studentName;
     }
 
     // Returns the student number.

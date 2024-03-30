@@ -12,14 +12,14 @@ import java.util.Map;
  * @author Alexander
  */
 public class Lecturer {
-    private String name; //lecturer name 
-    private String role; //lecturers role
-    private List<String> canTeachTypes;
-    private Map<String, Integer> modulesTeaching; // Maps module name to the number of enrolled students
+    private final String LecturerName; //lecturer name 
+    private final String role; //lecturers role
+    private final List<String> canTeachTypes;
+    private final Map<String, Integer> modulesTeaching; // Maps module name to the number of enrolled students
 
     // Constructor
     public Lecturer(String name, String role, List<String> canTeachTypes, Map<String, Integer> modulesTeaching) {
-        this.name = name;
+        this.LecturerName = name;
         this.role = role;
         this.canTeachTypes = canTeachTypes;
         this.modulesTeaching = modulesTeaching;
@@ -27,7 +27,7 @@ public class Lecturer {
 
     // Getters
     public String getName() { //returns lecturer name
-        return name;
+        return LecturerName;
     }
 
     public String getRole() { //returns lecturer role

@@ -20,4 +20,12 @@ public class DBConnector {
       public static Connection connect() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASS);
     }
+
+    static Connection getConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    static Lecturer getLecturerReport(String dr_Smith) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
