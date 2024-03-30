@@ -9,12 +9,12 @@ package college;
  * @author Alexander
  */
 public class Course { //created srings for the courses info we need from the DB
-    private int id;
-    private String name;
-    private String program;
-    private int studentsEnrolled;
-    private String lecturerName;
-    private String room;
+    private int id; //the course identification 
+    private String name; //name of the course
+    private String program; //the program the course belongs too
+    private int studentsEnrolled; //number of student enrolled
+    private String lecturerName; // lecturers name
+    private String room; // room where course takes place
     
      // Constructor for the course info from ther DB
     public Course(int id, String name, String program, int studentsEnrolled, String lecturerName, String room) {
